@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SODOKU.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Title">
+        <h1>SODOKU GAME</h1>
+    </div>
+    <div class="respon">
+        <div class="Diff_Time_Mode">
+            <div class="Diff">
+                <div class="res">
+                    <label for="Easy">Easy</label>
+                      <input type="checkbox" name="Easy" id="Easy">
+                </div>
+                <div class="res">
+                    <label for="Meduim" >Meduim</label>
+                   <input type="checkbox" name="Meduim" id="Meduim">
+                </div>
+                <div class="res">
+                    <label for="Difficult">Difficult</label>
+                 <input type="checkbox" name="Difficult" id="Difficult">
+                </div>
+            </div>
+            <div class="Time">
+                <div class="res">
+                    <label for="min5">5 MIN</label>
+                     <input type="checkbox" name="min5" id="Min5">
+                </div>
+                <div class="res">
+                    <label for="min8" >8 MIN</label>
+                     <input type="checkbox" name="min6" id="Min8">
+                </div>
+                <div class="res">
+                    <label for="min11">11 MIN</label>
+                     <input type="checkbox" name="min11" id="Min11">
+                </div>
+            </div>
+            <div class="Mode">
+                <div class="res">
+                    <label for="Dark">Dark Mode</label>
+                  <input type="checkbox" name="Dark" id="Dark">
+                </div>
+            </div>
+    </div>
+    </div>
+        <div id="Bu">
+            <input type="button" value="New Game" class="Button">
+        </div>
+        <div class="Game disapear">
+            <div class="Time_Tenta">
+                <div class="Time_Game">
+                    <p>Time : <span class="Timer"></span> s</p>
+                </div>
+                
+            </div>
+            <div class="SODOKU">
+                <div class="SODO">
+                    <table>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY0_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY1_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY2_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY3_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY4_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY5_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY6_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY7_8"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_0"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_1"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_2"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_3"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_4"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_5"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_6"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_7"></td>
+                            <td><input type="number" step="1" class="inp" max="9" min="1"  id="XY8_8"></td>
+                        </tr>
+                     
+                    </table>
+                    <div id="verif">
+                        <button type="submit" class="Verify Button">Verify SODOKU</button>
+                    </div>
+                </div>
+                <div class="Numbers">
+                    <input type="button" value="1" class="Number" draggable="true" id="one">
+                    <input type="button" value="2" class="Number" draggable="true" id="two">
+                    <input type="button" value="3" class="Number" draggable="true" id="three">
+                    <input type="button" value="4" class="Number" draggable="true" id="four">
+                    <input type="button" value="5" class="Number" draggable="true" id="five">
+                    <input type="button" value="6" class="Number" draggable="true" id="six">
+                    <input type="button" value="7" class="Number" draggable="true" id="seven">
+                    <input type="button" value="8" class="Number" draggable="true" id="eight">
+                    <input type="button" value="9" class="Number" draggable="true" id="nine">
+                </div>
+            </div>
+          
+        </div>
+        <div class="won No">
+            <div class="p1">
+                <p>You Won </p>
+            </div>
+            <div>
+                <i class="far fa-trash-alt"></i>
+            </div>
+        </div>
+        <div class="lost No">
+            <div class="p2">
+                <p>You Lost </p>
+            </div>
+            <div>
+                <i class="far fa-trash-alt"></i>
+            </div>
+        </div>
+        <div class="footer">Made By Salhi Abdou Arrahmane</div>
+    <script src="SODOKU.js"></script>
+</body>
+</html>
